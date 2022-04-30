@@ -1,0 +1,13 @@
+<form method="POST">
+    {% csrf_token %}
+    <label>Start date</label>
+    <input type="date" name="startdate" id="startdate">
+    <label>End date</label>
+    <input type="date" name="enddate" id="enddate">
+    <label>Group Name</label>
+    <input type="text" name="groupname" id="groupname">
+    <label>Course name</label>
+    <input type="text" name="coursename" id="coursename">
+    <input type="submit" name="Create Group" value= "Create Group"id="creategroup">
+
+</form>

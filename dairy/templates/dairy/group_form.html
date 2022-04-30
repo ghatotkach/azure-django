@@ -1,0 +1,19 @@
+{% extends 'dairy/base_bootstraps.html' %}
+
+{% block content %}
+    <center>
+        <h1>Add a new group</h1>
+        <br/>
+        {% if submitted %}
+            Group added to database
+        {% endif %}
+        <form action="" method=POST>
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <br/>
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+{% endblock %}
